@@ -10,3 +10,14 @@
   background-color: #f9f8f0;
   height: 100vh;
 }
+/* titulos */
+h1, h2, h3, h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+/* Textos generales con Lora */
+body, p, li, a {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}

@@ -20,11 +20,15 @@ const Home = () => {
                 <div className='Home-menu'
 
                 >
-                    <span className='Home-link Home-link--arrow'
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >menú <span class={`material-symbols-outlined ${!isMenuOpen ? 'cerrado' : ''}`}>
+                    <span className='Home-link--arrow'
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}>
+
+                        <span className='Home-link'>menú </span>
+                        <span className={`material-symbols-outlined ${!isMenuOpen ? 'cerrado' : ''}`}>
                             straight
-                        </span></span>
+                        </span>
+                    </span>
+
 
                     {isMenuOpen &&
                         (
