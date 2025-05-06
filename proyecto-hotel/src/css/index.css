@@ -5,3 +5,8 @@
   list-style: none;
   text-decoration: none;
 }
+
+.Body{
+  background-color: #f9f8f0;
+  height: 100vh;
+}
