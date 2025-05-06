@@ -1,4 +1,4 @@
-.Home-img{
+.Home-img {
     height: 100vh;
     width: 100vw;
     background-image: url('/imgs/hotel-fachada.webp');
@@ -10,82 +10,44 @@
     background-blend-mode: darken;
 }
 
-.Home-title{
+.Home-title {
     pointer-events: none;
     position: absolute;
     bottom: 70px;
     left: 70px;
 }
-.Home-h1{
+
+.Home-h1 {
     font-size: 3.4rem;
     color: white;
 }
-.Home-h2{
+
+.Home-h2 {
     font-size: 2.4rem;
     color: white;
-    
+
 }
 
+
+/* cambios de colores */
 .Home-nav{
     position: absolute;
     top: 20px;
     right: 40px;
     display: flex;
     gap: 40px;
+
+}
+.General-link--home {
+    color: white;
 }
 
-.Home-link{
-    cursor: pointer;
+.General-link--arrow .material-symbols-outlined.home {
     color: white;
-    font-size: 1.2rem;
-    position: relative;
-    /* display: inline-block; */
-    transition: transform 0.3s ease-in-out;
-    padding-bottom: 4px; /* espacio para el subrayado y q no se muevvan los elementos */
-}
-.Home-link:hover{
-    transform: skewX(-10deg);
-}
-.Home-link--arrow .material-symbols-outlined {
-    cursor: pointer;
-    color: white;
-    display: inline-block;
-    transform: none; /* anular el skew en la flecha */
 }
 
-.Home-link::after{
-    /*::after para poner contenido despues de un elemento, aqui un subrayado */
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 1.8px;
+.General-link--home::after {
+
     background-color: white;
-    transition: width 0.5s ease-in-out;
-}
 
-.Home-link:hover::after{
-    width: 100%;
-}
-
-.Home-link--arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Home-submenu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* para cuando este menu cerrado, q la flecha esté para abajo */
-.cerrado{
-    rotate: 180deg;
 }
