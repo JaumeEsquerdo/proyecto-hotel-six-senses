@@ -1,0 +1,24 @@
+.Home-img{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/imgs/hotel-fachada.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.06);
+    background-blend-mode: darken;
+}
+
+.Home-title{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.Home-h1{
+    color: white;
+}
+.Home-h2{
+    color: white;
+    
+}
