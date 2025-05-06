@@ -23,7 +23,8 @@ const Home = () => {
                     <span className='Home-link--arrow'
                     onClick={() => setIsMenuOpen(!isMenuOpen)}>
 
-                        <span className='Home-link'>menú </span>
+                        <span className='Home-link'
+                        >menú </span>
                         <span className={`material-symbols-outlined ${!isMenuOpen ? 'cerrado' : ''}`}>
                             straight
                         </span>
