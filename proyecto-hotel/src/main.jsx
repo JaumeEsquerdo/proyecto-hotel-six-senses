@@ -7,8 +7,10 @@ import router from '@/lib/routes/router'
 import { AppProvider } from './context/AppContext'
 import '@/css/index.css'
 import '@/css/header.css'
+import '@/css/footer.css'
 import '@/css/home.css'
 import '@/css/habitaciones.css'
+
 
 
 createRoot(document.getElementById('root')).render(
