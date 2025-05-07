@@ -16,10 +16,30 @@ const HabitacionDetalles = () => {
                 <img className="HabitacionDetalle-image" src={habitacion.default} alt={`${habitacion.name} `} />
                 <img className="HabitacionDetalle-image" src={habitacion.hover} alt={`${habitacion.name} `} />
             </div>
+
+
             <div className="HabitacionDetalle-caracteristicas">
                 <div className="HabitacionDetalle-textos">
-                    <h2 className="HabitacionDetalle-h2">{habitacion.name}</h2>
-                    <p>{habitacion.description}</p>
+
+                    <div className="HabitacionDetalle-detalle">
+                        <h2 className="HabitacionDetalle-titulo">{habitacion.name}</h2>
+                        <p>{habitacion.description}</p>
+                    </div>
+
+                    <div className="HabitacionDetalle-detalle">
+                        <h3 className="HabitacionDetalle-titulo">datos clave</h3>
+                        <p>{habitacion.datos}</p>
+                    </div>
+
+                    <div className="HabitacionDetalle-detalle">
+                        <h3 className="HabitacionDetalle-titulo">servicios</h3>
+                        <ul className="HabitacionDetalle-ul">
+                            {habitacion.servicios.map((serv, i) => (
+                                <li key={i} className="HabitacionDetalle-li">{serv}</li>
+                            ))}
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 

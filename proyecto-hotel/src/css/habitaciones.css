@@ -17,7 +17,8 @@
     grid-column: 1;
     align-items: start;
     text-align: left;
-    margin-top: 1rem; /* simular efecto asimetria layout masonry */
+    margin-top: 1rem;
+    /* simular efecto asimetria layout masonry */
 
 }
 
@@ -25,7 +26,8 @@
     grid-column: 2;
     align-items: end;
     text-align: right;
-    margin-top: 10rem; /* simular efecto asimetria layout masonry */
+    margin-top: 10rem;
+    /* simular efecto asimetria layout masonry */
 }
 
 .Image-container {
@@ -79,12 +81,19 @@
 .Gallery-item.wide .Image-container {
     aspect-ratio: 16/9;
 }
-.Image-legend{
+
+.Image-legend {
     color: #333;
 }
 
 /* css habitacion individual detalles */
-.HabitacionDetalle-images{
+.HabitacionDetalle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.HabitacionDetalle-images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,20 +101,69 @@
 
 }
 
-.HabitacionDetalle-image{
+.HabitacionDetalle-image {
     width: 38%;
     object-fit: cover;
     aspect-ratio: 4/3;
 }
 
-.HabitacionDetalle-caracteristicas{
+/* grid de habitaciones */
+
+.HabitacionDetalle-caracteristicas {
     display: flex;
     justify-content: flex-start;
-    padding: 40px;
+    padding: 80px 40px;
 }
 
-.HabitacionDetalle-textos{
+.HabitacionDetalle-textos {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    /* título y contenido */
+    grid-row-gap: 3rem;
+    column-gap: 4rem;
+    max-width: 900px;
+    width: 100%;
+    align-items: start;
+}
+
+.HabitacionDetalle-detalle {
+    display: contents;
+    /* esto hace q el contenido (dos cosas) se comporte como dos columnas, desaparece del DOM el div para q vaya bien el layout */
+
+}
+
+.HabitacionDetalle-titulo {
+    font-size: 1.2rem;
+
+}
+
+/* estilos  listas */
+
+.HabitacionDetalle-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 40px;
-    max-width: 1200px;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.HabitacionDetalle-li {
+    position: relative;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.HabitacionDetalle-li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: #5e615f;
+
 }
