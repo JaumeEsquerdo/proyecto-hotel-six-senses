@@ -16,8 +16,14 @@ const HabitacionDetalles = () => {
                 <img className="HabitacionDetalle-image" src={habitacion.default} alt={`${habitacion.name} `} />
                 <img className="HabitacionDetalle-image" src={habitacion.hover} alt={`${habitacion.name} `} />
             </div>
-            <h2 className="HabitacionDetalle-h2">{habitacion.name}</h2>
-            <p>{habitacion.description}</p>
+            <div className="HabitacionDetalle-caracteristicas">
+                <div className="HabitacionDetalle-textos">
+                    <h2 className="HabitacionDetalle-h2">{habitacion.name}</h2>
+                    <p>{habitacion.description}</p>
+                </div>
+            </div>
+
+
         </div>
     );
 }

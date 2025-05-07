@@ -97,3 +97,15 @@
     object-fit: cover;
     aspect-ratio: 4/3;
 }
+
+.HabitacionDetalle-caracteristicas{
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+.HabitacionDetalle-textos{
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
