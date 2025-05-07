@@ -5,14 +5,10 @@ import { useLocation } from "react-router-dom";
 export const useHeaderTitle = () => {
     const { pathname } = useLocation();
 
-    switch (pathname) {
-        case '/reservar':
-            return 'reservar';
-        case '/habitaciones':
-            return 'habitaciones';
-        case '/instalaciones':
-            return 'instalaciones';
-        default:
-            return '';
-    }
+    if (pathname === '/reservar') return 'reservar';
+    if (pathname === '/habitaciones') return 'habitaciones';
+    if (pathname.startsWith('/habitaciones/')) return 'habitaciones';
+    if (pathname === '/instalaciones') return 'instalaciones';
+
+    return '';
 }

@@ -6,6 +6,7 @@ import Home from '@/pages/Home'
 import Habitaciones from '@/pages/Habitaciones'
 import Instalaciones from '@/pages/Instalaciones'
 import Reservar from '@/pages/Reservar'
+import HabitacionDetalles from '@/pages/HabitacionDetalle'
 
 
 // importe de páginas especiales
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
                 {
                     path: '/habitaciones',
                     element: <Habitaciones />,
+                },
+                {
+                    path: '/habitaciones/:id',
+                    element: <HabitacionDetalles />
                 },
                 {
                     path: '/instalaciones',
