@@ -34,7 +34,7 @@ body, p, li, a {
 .General-link{
   cursor: pointer;
   color: rgb(56, 54, 54);
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   /* display: inline-block; */
   transition: transform 0.3s ease-in-out;

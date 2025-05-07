@@ -1,10 +1,18 @@
 .Header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 8px 40px;
+    align-items: flex-start;
+    padding: 14px 40px;
 }
 
 .Header-title--h3{
     font-size: 1.2rem;
+}
+
+.Header-principal{
+    font-size: 1.2rem;
+}
+
+.Header-secundario{
+    font-size: 1rem;
 }
