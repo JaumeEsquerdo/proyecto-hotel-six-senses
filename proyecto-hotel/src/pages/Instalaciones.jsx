@@ -1,10 +1,10 @@
 const Instalaciones = () => {
-    return ( 
+    return (
 
         <>
-        Instalacions
+            Instalacions
         </>
-     );
+    );
 }
- 
+
 export default Instalaciones;

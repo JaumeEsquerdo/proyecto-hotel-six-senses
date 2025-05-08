@@ -1,11 +1,17 @@
 import { useParams } from "react-router-dom";
 import { habitaciones } from "@/data/habitaciones";
+import { useEffect } from "react";
 
 /* useParams para obtener los datos dinamicos de la url */
 const HabitacionDetalles = () => {
 
     const { id } = useParams();
     const habitacion = habitaciones.find(h => h.id === id)
+
+    /* reset de scroll para cuando entre en una hab individual no este el scroll bajo */ 
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
 
     if (!habitacion) return <p>Habitación no encontrada</p>
     return (
