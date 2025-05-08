@@ -26,7 +26,7 @@ const GeneralNav = () => {
                     (
                         <div className='General-submenu'>
                             <Link to={'/habitaciones'} className='General-link'>habitaciones</Link>
-                            <Link className='General-link'>instalaciones</Link>
+                            <Link to={'/instalaciones'} className='General-link'>instalaciones</Link>
 
                         </div>
                     )

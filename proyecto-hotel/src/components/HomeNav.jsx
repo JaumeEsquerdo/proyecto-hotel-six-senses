@@ -25,7 +25,7 @@ export const HomeNav = () => {
                     (
                         <div className='General-submenu'>
                             <Link to={'/habitaciones'} className='General-link General-link--home'>habitaciones</Link>
-                            <Link className='General-link General-link--home'>instalaciones</Link>
+                            <Link  to={'/instalaciones'} className='General-link General-link--home'>instalaciones</Link>
 
                         </div>
                     )
