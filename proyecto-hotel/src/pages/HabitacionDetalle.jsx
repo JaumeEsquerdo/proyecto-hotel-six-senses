@@ -28,17 +28,17 @@ const HabitacionDetalles = () => {
                 <div className="HabitacionDetalle-textos">
 
                     <div className="HabitacionDetalle-detalle">
-                        <h2 className="HabitacionDetalle-titulo">{habitacion.name}</h2>
-                        <p>{habitacion.description}</p>
+                        <h2 className="HabitacionDetalle-titulo HabitacionDetalle-nombre">{habitacion.name}</h2>
+                        <p className="HabitacionDetalle-titulo">{habitacion.description}</p>
                     </div>
 
                     <div className="HabitacionDetalle-detalle">
-                        <h3 className="HabitacionDetalle-titulo">datos clave</h3>
-                        <p>{habitacion.datos}</p>
+                        <p className="HabitacionDetalle-titulo">datos clave</p>
+                        <p className="HabitacionDetalle-titulo">{habitacion.datos}</p>
                     </div>
 
                     <div className="HabitacionDetalle-detalle">
-                        <h3 className="HabitacionDetalle-titulo">servicios</h3>
+                        <p className="HabitacionDetalle-titulo">servicios</p>
                         <ul className="HabitacionDetalle-ul">
                             {habitacion.servicios.map((serv, i) => (
                                 <li key={i} className="HabitacionDetalle-li">{serv}</li>

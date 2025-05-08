@@ -10,6 +10,7 @@ import '@/css/header.css'
 import '@/css/footer.css'
 import '@/css/home.css'
 import '@/css/habitaciones.css'
+import '@/css/instalaciones.css'
 
 
 

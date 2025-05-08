@@ -133,8 +133,16 @@
 }
 
 .HabitacionDetalle-titulo {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #555;
 
+}
+
+.HabitacionDetalle-nombre{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
 }
 
 /* estilos  listas */
@@ -154,6 +162,7 @@
     position: relative;
     line-height: 1.4;
     font-weight: 400;
+    color: #555;
 }
 
 .HabitacionDetalle-li::before {
@@ -162,7 +171,7 @@
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
-    width: 20px;
+    width: 10px;
     height: 1px;
     background-color: #5e615f;
 
