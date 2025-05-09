@@ -38,10 +38,11 @@ const Reservar = () => {
                 <h2 className="Booking-title">reserva tu experiencia en Six Senses Ibiza</h2>
                 <form className="Booking-form" onSubmit={handleSubmit}>
                     <label className="Booking-label">nombre completo
-                        <input className="Booking-input" type="text" name="name" required /></label>
+                        <input className="Booking-input" type="text" name="name" placeholder="Ana García López"
+                            required /></label>
 
                     <label className="Booking-label">email
-                        <input className="Booking-input" type="email" name="email" required /></label>
+                        <input className="Booking-input" type="email" name="email" placeholder="ejemplo@correo.com" required /></label>
 
                     <label className="Booking-label">tipo de habitación
                         <select
@@ -50,7 +51,7 @@ const Reservar = () => {
                             onChange={(e) => setSelectedRoom(e.target.value)}
                             required
                         >
-                            <option value="">-- selecciona una habitación --</option>
+                            <option value="">- elige una opción -</option>
                             {habitaciones.map(hab => (
                                 <option key={hab.id} value={hab.id}>{hab.name}</option>
                             ))}
@@ -84,11 +85,11 @@ const Reservar = () => {
                     </p>
                     <h3>contacto</h3>
                     <p className="Booking-infoTexto">
-                        <span class="material-symbols-outlined">location_on</span>
+                        <span className="material-symbols-outlined">location_on</span>
                         Cala Xarraca, Ibiza<br />
-                        <span class="material-symbols-outlined">call</span>
+                        <span className="material-symbols-outlined">call</span>
                         +34 871 008 875<br />
-                        <span class="material-symbols-outlined">mail</span>
+                        <span className="material-symbols-outlined">mail</span>
                         reservations-ibiza@sixsenses.com
                     </p>
                     <p></p>
