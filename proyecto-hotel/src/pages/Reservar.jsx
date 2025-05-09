@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
 import { habitaciones } from "@/data/habitaciones";
@@ -7,13 +7,13 @@ import { useAppContext } from "@/context/AppContext";
 const Reservar = () => {
     const { selectedRoom, setSelectedRoom } = useAppContext();
 
-
-    const [checkIn, setCheckIn] = useState(null);
-    const [checkOut, setCheckOut] = useState(null);
-
     const today = new Date();
     const tomorrow = new Date();
     tomorrow.setDate(today.getDate() + 1); // añadir un dia mas (para q sea mañana claro)
+
+    const [checkIn, setCheckIn] = useState(today);
+    const [checkOut, setCheckOut] = useState(tomorrow);
+
 
 
 
@@ -23,6 +23,12 @@ const Reservar = () => {
 
         console.log({ checkIn, checkOut });
     }
+
+
+    /* reset de scroll para cuando entre en una hab individual no este el scroll bajo */
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <>
@@ -52,16 +58,19 @@ const Reservar = () => {
                     </label>
                     <label className="Booking-label">fecha de entrada
                         <DatePicker
+                            dateFormat="dd/MM/yyyy"
                             minDate={today} selected={checkIn} onChange={setCheckIn} className="datepicker Booking-date" /></label>
 
                     <label className="Booking-label">fecha de salida
                         <DatePicker
+                            dateFormat="dd/MM/yyyy"
+
                             minDate={today} selected={checkOut} onChange={setCheckOut} className="datepicker Booking-date" /></label>
 
                     <label className="Booking-label">personas
                         <input defaultValue={1} className="Booking-input" type="number" name="guests" min="1" max="10" required /></label>
 
-                    <button className="Booking-btn" type="submit">reservar</button>
+                    <button className="Booking-btn" type="submit">confirmar reserva</button>
                 </form>
             </div>
 
@@ -74,11 +83,16 @@ const Reservar = () => {
                         nuestro equipo está disponible todos los días y a todas horas para ayudarte con cualquier detalle de tu estancia.
                     </p>
                     <h3>contacto</h3>
-                    <p>
-                        📍 Cala Xarraca, Ibiza<br />
-                        📞 +34 871 008 875<br />
-                        ✉️ reservations-ibiza@sixsenses.com
+                    <p className="Booking-infoTexto">
+                        <span class="material-symbols-outlined">location_on</span>
+                        Cala Xarraca, Ibiza<br />
+                        <span class="material-symbols-outlined">call</span>
+                        +34 871 008 875<br />
+                        <span class="material-symbols-outlined">mail</span>
+                        reservations-ibiza@sixsenses.com
                     </p>
+                    <p></p>
+                    <p></p>
                 </div>
             </div>
 

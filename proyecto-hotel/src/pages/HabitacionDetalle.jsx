@@ -25,7 +25,7 @@ const HabitacionDetalles = () => {
         window.scrollTo(0, 0);
     }, [])
 
-    if (!habitacion) return <p>Habitación no encontrada</p>
+    if (!habitacion) return <p>habitación no encontrada</p>
     return (
         <div className="HabitacionDetalle">
 
@@ -57,9 +57,12 @@ const HabitacionDetalles = () => {
                             ))}
                         </ul>
                     </div>
-                    <button className="HabitacionDetalle-reservarBtn" onClick={reservarHabitacion}>
-                        Reservar esta habitación
-                    </button>
+
+                    <div className="HabitacionDetalle-boton">
+                        <button className="HabitacionDetalle-reservarBtn" onClick={reservarHabitacion}>
+                            reservar esta habitación
+                        </button>
+                    </div>
                 </div>
 
             </div>

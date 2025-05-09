@@ -1,6 +1,14 @@
 import { instalaciones } from "@/data/instalaciones";
+import { useEffect } from "react";
+
 
 const Instalaciones = () => {
+
+    
+    /* reset de scroll para cuando entre en una hab individual no este el scroll bajo */
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
 
         <>

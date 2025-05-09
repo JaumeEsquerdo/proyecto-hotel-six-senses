@@ -139,7 +139,7 @@
 
 }
 
-.HabitacionDetalle-nombre{
+.HabitacionDetalle-nombre {
     font-size: 1.3rem;
     font-weight: 500;
     color: #000;
@@ -175,4 +175,27 @@
     height: 1px;
     background-color: #5e615f;
 
+}
+
+.HabitacionDetalle-boton{
+    grid-column: 2; /* Solo ocupa la columna de contenido */
+    margin-top: 2rem;
+}
+
+.HabitacionDetalle-reservarBtn {
+    background-color: #7e5e4930; 
+    color: #3b2c23;
+    border: 1.8px solid #3b2c23;
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.HabitacionDetalle-reservarBtn:hover {
+    background-color: #7e5e4945;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
