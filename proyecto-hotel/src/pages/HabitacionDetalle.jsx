@@ -1,17 +1,29 @@
 import { useParams } from "react-router-dom";
 import { habitaciones } from "@/data/habitaciones";
 import { useEffect } from "react";
+import { useAppContext } from "@/context/AppContext";
+import { useNavigate } from "react-router-dom";
+
+
 
 /* useParams para obtener los datos dinamicos de la url */
 const HabitacionDetalles = () => {
+    const { setSelectedRoom } = useAppContext();
+    const navigate = useNavigate();
+
+    const reservarHabitacion = () => {
+        setSelectedRoom(habitacion.id);
+        navigate("/reservar");
+    };
+
 
     const { id } = useParams();
     const habitacion = habitaciones.find(h => h.id === id)
 
-    /* reset de scroll para cuando entre en una hab individual no este el scroll bajo */ 
-    useEffect(()=>{
-        window.scrollTo(0,0);
-    },[])
+    /* reset de scroll para cuando entre en una hab individual no este el scroll bajo */
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     if (!habitacion) return <p>Habitación no encontrada</p>
     return (
@@ -45,8 +57,11 @@ const HabitacionDetalles = () => {
                             ))}
                         </ul>
                     </div>
-
+                    <button className="HabitacionDetalle-reservarBtn" onClick={reservarHabitacion}>
+                        Reservar esta habitación
+                    </button>
                 </div>
+
             </div>
 
 

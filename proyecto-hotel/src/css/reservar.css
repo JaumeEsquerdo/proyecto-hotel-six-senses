@@ -1,0 +1,76 @@
+.Booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    /* similar a Anemona */
+    color: #222;
+}
+
+.Booking-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.Booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.Booking-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #333
+}
+
+.Booking-input,
+.Booking-date {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+}
+
+.Booking-date {
+    width: 100%;
+}
+
+.Booking-btn {
+    align-self: flex-start;
+    background-color: #118B50;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.Booking-btn:hover {
+    background-color: #0e7342;
+}
+
+.Booking-info {
+    width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 80px 40px;
+    
+}
+
+.Booking-infoTextos{
+    display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-row-gap: 3rem;
+        column-gap: 4rem;
+        max-width: 900px;
+        width: 100%;
+        align-items: start;
+}

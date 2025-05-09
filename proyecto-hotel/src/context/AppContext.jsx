@@ -6,7 +6,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false); //abrir / cerrar menu
-
+    const [selectedRoom, setSelectedRoom] = useState(null); // aññadir hab a la reserva
 
 
 
@@ -17,6 +17,8 @@ export const AppProvider = ({ children }) => {
 
                 isMenuOpen,
                 setIsMenuOpen,
+                selectedRoom,
+                setSelectedRoom,
 
             }}
         >
