@@ -218,6 +218,7 @@
         text-align: center;
         margin-top: 2rem;
     }
+
     /* aspect ratio uniforme en tablet */
     .Gallery-item.tall .Image-container,
     .Gallery-item.medium .Image-container,
@@ -245,5 +246,48 @@
     .HabitacionDetalle-boton {
         grid-column: auto;
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .Gallery {
+        padding: 4rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .Image-container {
+        aspect-ratio: 3/4;
+    }
+
+    .Gallery-item.left,
+    .Gallery-item.right {
+        margin-top:0;
+    }
+
+    .HabitacionDetalle {
+        margin-top: 3rem;
+    }
+
+    .HabitacionDetalle-images {
+        margin-top: 40px;
+        gap: 0.8rem;
+    }
+
+    .HabitacionDetalle-textos {
+        padding: 0 1rem;
+    }
+
+    .HabitacionDetalle-titulo,
+    
+    .HabitacionDetalle-li {
+        font-size: 0.95rem;
+    }
+    .HabitacionDetalle-nombre{
+        font-size: 1.2rem;
+    }
+
+    .HabitacionDetalle-reservarBtn {
+        width: 100%;
+        padding: 12px 0;
     }
 }

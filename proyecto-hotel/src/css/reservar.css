@@ -103,3 +103,52 @@
         padding: 4rem 0;
     }
 }
+
+@media (max-width: 768px) {
+    .Booking-container {
+        padding: 3rem 1rem;
+        margin-top: 40px;
+    }
+
+    .Booking-title {
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 1.3;
+    }
+
+    .Booking-form {
+        gap: 1.5rem;
+    }
+
+    .Booking-label {
+        font-size: 0.95rem;
+    }
+
+    .Booking-input,
+    .Booking-date {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+
+    .Booking-btn {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+
+    .Booking-info {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .Booking-infoTextos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Booking-infoTexto {
+        font-size: 0.95rem;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+}

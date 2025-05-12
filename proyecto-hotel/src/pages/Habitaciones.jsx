@@ -15,20 +15,20 @@ const Habitaciones = () => {
         <>
             <div className="Gallery">
                 {habitaciones.map((hab, i) => (
-                    <Link key={hab.id}
+                    <Link className={`Gallery-item ${hab.size} ${i % 2 === 0 ? 'left' : 'right'}`} key={hab.id}
                         to={`/habitaciones/${hab.id}`}>
 
-                        <div key={i} className={`Gallery-item ${hab.size} ${i % 2 === 0 ? 'left' : 'right'}`}>
-                            <div className='Image-container'>
-                                <img className="Image-default" src={hab.default} alt="img habitacion 1" />
-                                <img className="Image-hover" src={hab.hover} alt="img habitacion 2" />
-                            </div>
 
-                            <div className="Image-legend">
-                                <span>{hab.name} </span>
-                                <span>no. {i + 1}</span>
-                            </div>
+                        <div className='Image-container'>
+                            <img className="Image-default" src={hab.default} alt="img habitacion 1" />
+                            <img className="Image-hover" src={hab.hover} alt="img habitacion 2" />
                         </div>
+
+                        <div className="Image-legend">
+                            <span>{hab.name} </span>
+                            <span>no. {i + 1}</span>
+                        </div>
+
                     </Link>
                 ))}
 

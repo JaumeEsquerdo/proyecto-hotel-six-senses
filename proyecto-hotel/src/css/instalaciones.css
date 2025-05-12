@@ -142,3 +142,31 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 768px) {
+
+    .GalleryInstalaciones-item.right {
+        margin-top: 0;
+    }
+
+    .ImageInstalaciones-container {
+        aspect-ratio: 4/3;
+    }
+
+
+    .Image-legend {
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .Legend-title {
+        font-size: 1rem;
+    }
+
+    .Legend-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+}
