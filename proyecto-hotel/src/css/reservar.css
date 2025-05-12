@@ -47,22 +47,23 @@
 
 .Booking-info {
     width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        padding: 80px 40px;
-    
+    display: flex;
+    justify-content: flex-start;
+    padding: 80px 40px;
+
 }
 
-.Booking-infoTextos{
+.Booking-infoTextos {
     display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-row-gap: 3rem;
-        column-gap: 4rem;
-        max-width: 900px;
-        width: 100%;
-        align-items: start;
+    grid-template-columns: 200px 1fr;
+    grid-row-gap: 3rem;
+    column-gap: 4rem;
+    max-width: 900px;
+    width: 100%;
+    align-items: start;
 }
-.Booking-infoTexto{
+
+.Booking-infoTexto {
 
     display: flex;
     flex-direction: column;
@@ -74,19 +75,31 @@
 .Booking-btn {
     align-self: flex-start;
     margin-top: 1rem;
-    background-color: rgba(70, 105, 85, 0.25); /* un poco más opaco que el otro */
+    background-color: rgba(70, 105, 85, 0.25);
+    /* un poco más opaco que el otro */
     color: #2F3E2E;
     border: 1.8px solid #2F3E2E;
     padding: 12px 28px;
     font-size: 0.95rem;
-    
+
     cursor: pointer;
     letter-spacing: 0.05em;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Booking-btn:hover{
+.Booking-btn:hover {
     background-color: rgba(70, 105, 85, 0.35);
     transform: translateY(-2px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* responsive movil */
+
+
+/* responsive tablet */
+@media (max-width: 1023px) {
+    .Booking-container {
+        margin: 0 40px;
+        padding: 4rem 0;
+    }
 }

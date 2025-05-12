@@ -100,3 +100,45 @@
     /* line-height: 1; */
     color: #555;
 }
+
+
+/* responsive tablet */
+@media (max-width: 1023px) {
+    .GalleryInstalaciones {
+        padding: 4rem 2rem;
+        gap: 6rem;
+    }
+
+    .GalleryInstalaciones-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .GalleryInstalaciones-item.left .ImageInstalaciones-container,
+    .GalleryInstalaciones-item.right .ImageInstalaciones-container,
+    .GalleryInstalaciones-item.left .Image-legend,
+    .GalleryInstalaciones-item.right .Image-legend {
+        grid-column: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ImageInstalaciones-container {
+        aspect-ratio: 4/3;
+    }
+
+    .Image-legend {
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .Legend-title {
+        font-size: 1.1rem;
+    }
+
+    .Legend-description {
+        font-size: 0.95rem;
+    }
+}
