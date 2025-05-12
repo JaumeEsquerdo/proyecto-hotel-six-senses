@@ -11,7 +11,7 @@ import HabitacionDetalles from '@/pages/HabitacionDetalle'
 
 // importe de páginas especiales
 import Layout from '@/Layout'
-import ErrorPage from '@/pages/Errorpage'
+import ErrorPage from '@/pages/ErrorPage'
 
 
 
