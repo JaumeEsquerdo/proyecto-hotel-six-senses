@@ -104,6 +104,7 @@
     }
 }
 
+/* responsive movil */
 @media (max-width: 768px) {
     .Booking-container {
         padding: 3rem 1rem;

@@ -249,19 +249,22 @@
     }
 }
 
+/* responsive movil */
 @media (max-width: 767px) {
     .Gallery {
         padding: 4rem 1rem;
         gap: 2.5rem;
     }
 
-    .Image-container {
-        aspect-ratio: 3/4;
+    .Gallery-item.tall .Image-container,
+    .Gallery-item.medium .Image-container,
+    .Gallery-item.wide .Image-container {
+        aspect-ratio: 3 / 4;
     }
 
     .Gallery-item.left,
     .Gallery-item.right {
-        margin-top:0;
+        margin-top: 0;
     }
 
     .HabitacionDetalle {
@@ -278,11 +281,12 @@
     }
 
     .HabitacionDetalle-titulo,
-    
+
     .HabitacionDetalle-li {
         font-size: 0.95rem;
     }
-    .HabitacionDetalle-nombre{
+
+    .HabitacionDetalle-nombre {
         font-size: 1.2rem;
     }
 
@@ -290,4 +294,12 @@
         width: 100%;
         padding: 12px 0;
     }
+
+    .HabitacionDetalle-image {
+        object-fit: cover;
+        aspect-ratio: 3 / 3;
+
+    }
+
+    
 }

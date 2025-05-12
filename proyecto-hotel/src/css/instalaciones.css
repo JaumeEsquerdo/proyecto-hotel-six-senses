@@ -169,4 +169,12 @@
         line-height: 1.4;
         word-break: break-word;
     }
+
+    .ImageInstalaciones-container {
+        aspect-ratio: 3 / 3;
+    }
+
+    .GalleryInstalaciones {
+        padding: 4rem 1rem;
+    }
 }
