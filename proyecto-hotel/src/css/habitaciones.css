@@ -142,7 +142,7 @@
 .HabitacionDetalle-nombre {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #000;
+    color: #333;
 }
 
 /* estilos  listas */
@@ -185,8 +185,8 @@
 
 .HabitacionDetalle-reservarBtn {
     background-color: #7e5e4930;
-    color: #3b2c23;
-    border: 1.8px solid #3b2c23;
+    color: #333;
+    border: 1.8px solid #333;
     padding: 12px 28px;
     font-size: 0.95rem;
 

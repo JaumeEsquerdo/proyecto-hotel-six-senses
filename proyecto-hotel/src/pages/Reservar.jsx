@@ -92,7 +92,7 @@ const Reservar = () => {
                         <span className="material-symbols-outlined">mail</span>
                         reservations-ibiza@sixsenses.com
                     </p>
-                    
+
                 </div>
             </div>
 
