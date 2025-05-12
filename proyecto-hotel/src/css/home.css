@@ -30,7 +30,7 @@
 
 
 /* cambios de colores */
-.Home-nav{
+.Home-nav {
     position: absolute;
     top: 20px;
     right: 40px;
@@ -38,6 +38,7 @@
     gap: 40px;
 
 }
+
 .General-link--home {
     color: white;
     /* font-size: 1.2rem; */
@@ -51,4 +52,11 @@
 
     background-color: white;
 
+}
+
+@media (max-width: 767px) {
+
+    .Home-title {
+        left: 20px;
+    }
 }
