@@ -6,6 +6,21 @@ Esta aplicación es una muestra funcional de lo que podría ser una página de r
 
 ## Resumen del proyecto
 
+### Repositorio y versión online
+
+[Repositorio Github](https://github.com/JaumeEsquerdo/proyecto-hotel-six-senses)
+
+[Versión online desplegada en Vercel](https://proyecto-hotel-six-senses-ca2t.vercel.app/)
+
+### 🧱 Tech stack
+
+- React + Vite  
+- React Router DOM  
+- Context API  
+- React Datepicker  
+- CSS (modular, con enfoque responsive)  
+- JSON local como fuente de datos  
+
 ### Estructura general 
 
 El proyecto es una SPA (Single Page Application) en React con rutas gestionadas por react-router-dom. Se compone de varias páginas principales:
@@ -74,3 +89,7 @@ Incluye información adicional sobre el hotel y contacto.
 Se hace un scrollTo(0, 0) en cada página con useEffect para que al entrar empiece desde arriba.
 
 Uso de hooks (useState, useEffect, useContext, useParams, useNavigate) más el personalizado para cambiar de nombre de sección `useHeaderTitle`.
+
+## ✍️ Autor
+
+- **Jaume Esquerdo** · [LinkedIn](https://www.linkedin.com/in/jaume-esquerdo/) · [GitHub](https://github.com/JaumeEsquerdo)
