@@ -15,6 +15,7 @@ Esta aplicación es una muestra funcional de lo que podría ser una página de r
 ### 🧱 Tech stack
 
 - React + Vite  
+- Node.js
 - React Router DOM  
 - Context API  
 - React Datepicker  
